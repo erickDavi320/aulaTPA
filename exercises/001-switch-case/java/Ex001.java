@@ -1,4 +1,3 @@
-
 /*
     1-Uma escola de futebol classifica seus alunos da seguinte forma:
         • Alunos de 6 anos são categoria “dente de leite”
@@ -17,14 +16,14 @@ public class Ex001 {
         BufferedReader in = new
                 BufferedReader(new InputStreamReader(System.in));
 
-        int idade;
+        int age;
         String category = "", result;
         boolean status = true;
 
         System.out.println("Digite a sua idade:");
-        idade = Integer.parseInt(in.readLine());
+        age = Integer.parseInt(in.readLine());
 
-        switch (idade) {
+        switch (age) {
             case 6  -> category    = "dente de leite";
             case 7  -> category    = "júnior";
             case 8  -> category    = "júnior max";
