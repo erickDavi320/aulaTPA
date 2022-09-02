@@ -29,7 +29,7 @@ public class Ex001 {
             case 8  -> category    = "júnior max";
             case 9  -> category    = "júnior master";
             case 10 -> category    = "master";
-            default -> status       = false;
+            default -> status      = false;
         }
 
         result = (status)
