@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Proj_Um {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int mes,dia;
 		Scanner ler = new Scanner(System.in);
 		System.out.println("informe o mês de nascimento: ");
