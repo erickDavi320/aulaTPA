@@ -1,465 +1,128 @@
 import java.util.Scanner;
 
-public class Ex002 {
+public class Proj_Um {
+
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int mes,dia;
 		Scanner ler = new Scanner(System.in);
-		int dia,mes;
-		System.out.println("informe o mês de nascimento: " );
+		System.out.println("informe o mês de nascimento: ");
 		mes = ler.nextInt();
 		System.out.println("informe o dia de nascimento: ");
 		dia = ler.nextInt();
 		switch (mes) {
-		case 1:
-			switch (dia) {
 			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-				System.out.println("Seu signo é de Capricórnio!");
+				if (dia<=19){
+					System.out.println("Capricorniano");
+				}else if (dia>19 && dia<32){
+					System.out.println("Aquariano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 20:
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Aquário!");
-			}
-			break;
-		case 2:
-			switch (dia) {
-			case 1:
 			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-				System.out.println("Seu signo é de Aquário!");
+				if (dia<19) {
+					System.out.println("Aquariano");
+				}else if(dia>=20 && dia<29) {
+					System.out.println("Pisciano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 19:
-			case 20:
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-				System.out.println("Seu signo é de Peixes!");
-			}
-			break;
-			
-		case 3:
-			switch (dia) {
-			case 1:
-			case 2:
 			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-				System.out.println("Seu signo é de Peixes!");
+				if (dia<21) {
+					System.out.println("Pisciano");
+				}else if(dia>20 && dia<32) {
+					System.out.println("Ariano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Áries!");
-			}
-			break;
-		case 4:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
 			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-				System.out.println("Seu signo é de Áries!");
+				if (dia<21) {
+					System.out.println("Ariano");
+				}else if(dia>=21 && dia<31) {
+					System.out.println("Taurino");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-				System.out.println("Seu signo é de Touro!");
-			}
-			break;
-		case 5:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
 			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-				System.out.println("Seu signo é de Touro!");
+				if (dia<21) {
+					System.out.println("Taurino");
+				}else if(dia>=21 && dia<32) {
+					System.out.println("Geminiano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Gêmeos!");
-			}
-			break;
-		case 6:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
 			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-				System.out.println("Seu signo é de Gêmeos!");
+				if (dia<21) {
+					System.out.println("Geminiano");
+				}else if(dia>=21 && dia<31) {
+					System.out.println("Canceriano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-				System.out.println("Seu signo é de Câncer!");
-			}
-			break;
-		case 7:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
 			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-			case 22:
-				System.out.println("Seu signo é de Câncer!");
+				if (dia<23) {
+					System.out.println("Canceriano");
+				}else if(dia>=23 && dia<32) {
+					System.out.println("Leonino");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Leão!");
-			}
-			break;
-		case 8:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
 			case 8:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-			case 22:
-				System.out.println("Seu signo é de Leão!");
+				if (dia<23) {
+					System.out.println("Leonino");
+				}else if(dia>=23 && dia<32) {
+					System.out.println("Virgem");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Virgem!");
-			}
-			break;
-		case 9:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
 			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-			case 22:
-				System.out.println("Seu signo é de Virgem!");
+				if (dia<23) {
+					System.out.println("Virgem");
+				}else if(dia>=23 && dia<31) {
+					System.out.println("Libra");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-				System.out.println("Seu signo é de Libra!");
-			}
-			break;
-		case 10:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
 			case 10:
-			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-			case 22:
-				System.out.println("Seu signo é de Libra!");
+				if (dia<23) {
+					System.out.println("Libra");
+				}else if(dia>=23 && dia<32) {
+					System.out.println("Escorpião");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Escorpião!");
-			}
-			break;
-		case 11:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
 			case 11:
-			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-				System.out.println("Seu signo é de Escorpião!");
+				if (dia<22) {
+					System.out.println("Escorpião");
+				}else if(dia>=22 && dia<31) {
+					System.out.println("Sagitáriano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-				System.out.println("Seu signo é de Sagitário!");
-			}
-			break;
-		case 12:
-			switch (dia) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
 			case 12:
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-			case 21:
-				System.out.println("Seu signo é de Sagitário!");
+				if (dia<22) {
+					System.out.println("Sagitáriano");
+				}else if(dia>=22 && dia<32) {
+					System.out.println("Cápricorniano");
+				}else {
+					System.out.println("esse dia não é válido!");
+				}
 				break;
-			case 22:
-			case 23:
-			case 24:
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-				System.out.println("Seu signo é de Capricórnio!");
-			}
-			break;
+			default :
+				System.out.println("Esse mês não é válido!");
 		}
 		ler.close();
 	}
+
 }
