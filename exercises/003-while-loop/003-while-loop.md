@@ -9,9 +9,9 @@
 2 - Defina a altura de Pedro em cm (alturaPedro = 145)
 3 - Defina o ano (ano = 1)
 4 - Enquanto (alturaPedro >= alturaJoao) faça do passo 5 ao 7
-		5 - Aumente a altura de João (alturaJoao = alturaJoao + 2.5)
-		6 - Aumente a altura de Pedro (alturaPedro = alturaPedro + 2.0)
-		7 - Incrementar o ano (ano = ano + 1)
+	5 - Aumente a altura de João (alturaJoao = alturaJoao + 2.5)
+	6 - Aumente a altura de Pedro (alturaPedro = alturaPedro + 2.0)
+	7 - Incrementar o ano (ano = ano + 1)
 8 - Apresente quantos anos João levou para ser maior que Pedro (ano)
 ```
 
@@ -24,19 +24,19 @@
 ```jsx
 programa ALTURA
 var
-		ano : inteiro
-		alturaPedro, alturaJoao : real
+	ano : inteiro
+	alturaPedro, alturaJoao : real
 
 inicio
-		alturaJoao = 134
-		alturaPedro = 145
-		ano = 1
-		enquanto (alturaPedro >= alturaJoao) faça
-				alturaJoao = alturaJoao + 2.5
-				alturaPedro = alturaPedro + 2.0
-				ano = ano + 1
+	alturaJoao = 134
+	alturaPedro = 145
+	ano = 1
+	enquanto (alturaPedro >= alturaJoao) faça
+		alturaJoao = alturaJoao + 2.5
+		alturaPedro = alturaPedro + 2.0
+		ano = ano + 1
 		fim_enquanto
-		escreva(ano)
+	escreva(ano)
 fim
 ```
 
@@ -68,9 +68,9 @@ public class Ex001 {
 1 - Leia um número digitado pelo usuário (num)
 2 - Inicie o contador (i = 1)
 3 - Enquanto (i <= 10) faça do passo 4 ao 6
-		4 - Calcule o resultado (resultado = num * i)
-		5 - Apresente o resultado (resultado)
-		6 - Incremente o contador (i = i + 1)
+	4 - Calcule o resultado (resultado = num * i)
+	5 - Apresente o resultado (resultado)
+	6 - Incremente o contador (i = i + 1)
 ```
 
 ## Fluxograma:
@@ -82,16 +82,16 @@ public class Ex001 {
 ```jsx
 programa TABUADA
 var
-		num, i : inteiro
+	num, i : inteiro
 
 inicio
-		leia (num)
-		i = 1
-		enquanto (i <= 10) faça
-				resultado = num * i
-				escreva(resultado)
-				i = i + 1
-		fim_enquanto
+	leia (num)
+	i = 1
+	enquanto (i <= 10) faça
+		resultado = num * i
+		escreva(resultado)
+		i = i + 1
+	fim_enquanto
 fim
 ```
 
@@ -128,8 +128,8 @@ public class Ex002 {
 1 - Defina o contador (cont = 1)
 2 - Inicie a variavel resultado (resultado = 0)
 3 - Enquanto (cont <= 100) faça do passo 4 ao 5
-		4 - Defina o valor do resultado (resultado = resultado + cont)
-		5 - Incremente o contador (cont = cont + 1)
+	4 - Defina o valor do resultado (resultado = resultado + cont)
+	5 - Incremente o contador (cont = cont + 1)
 6 - Apresente o resultado (resultado)
 ```
 
@@ -142,16 +142,16 @@ public class Ex002 {
 ```jsx
 programa SOMA
 var
-		cont, resultado : inteiro
+	cont, resultado : inteiro
 
 inicio
-		cont = 1
-		resultado = 0
-		enquanto (cont <= 100) faça
-				resultado = resultado + cont
-				cont = cont + 1
-		fim_enquanto
-		escreva(resultado)
+	cont = 1
+	resultado = 0
+	enquanto (cont <= 100) faça
+		resultado = resultado + cont
+		cont = cont + 1
+	fim_enquanto
+	escreva(resultado)
 fim
 ```
 
@@ -183,8 +183,8 @@ Obs.: O fatorial de um número é obtido por meio do cálculo:
 1- Leia a base(i)
 2- Defina o fatorial (fatorial = 1)
 3- Enquanto (i > 0) faça do passo 4 ao 5
-		4- Calcule o fatorial (fatorial = fatorial * i)
-		5- Reduza o contador (i = i - 1)
+	4- Calcule o fatorial (fatorial = fatorial * i)
+	5- Reduza o contador (i = i - 1)
 6- Apresente o resultado final (fatorial)
 ```
 
@@ -197,16 +197,16 @@ Obs.: O fatorial de um número é obtido por meio do cálculo:
 ```jsx
 programa FATORIAL
 var
-		i, fatorial: inteiro
+	i, fatorial: inteiro
 
 inicio 
-		leia (i)
-		fatorial = 1
-		enquanto (i>0) faça
-				fatorial = fatorial * i 
-				i = i - 1
-		fim_escolha
-		escreva (fatorial)
+	leia (i)
+	fatorial = 1
+	enquanto (i>0) faça
+		fatorial = fatorial * i 
+		i = i - 1
+	fim_escolha
+	escreva (fatorial)
 fim
 ```
 
@@ -242,8 +242,8 @@ public class Ex004 {
 3- Defina o contador (i = 1)
 4- Defina a potência (potencia = 1)
 5- Enquanto (i <= expoente) faça do passo 6 ao 7
-		6- Calcule a potência (potencia = potencia * base)
-		7- Incremente o contador (i = i + 1)
+	6- Calcule a potência (potencia = potencia * base)
+	7- Incremente o contador (i = i + 1)
 8- Apresente o resultado final (potencia)
 ```
 
@@ -256,18 +256,18 @@ public class Ex004 {
 ```jsx
 programa POTENCIA
 var
-		base, expoente, potencia, i: inteiro
+	base, expoente, potencia, i: inteiro
 
 inicio
-		leia (base)
-		leia (expoente)
-		i = 1
-		potencia = 1
-		enquanto (i <= expoente) faça
-				potencia = potencia * base
-				i = i + 1
-		fim_escolha
-		escreva (potencia)
+	leia (base)
+	leia (expoente)
+	i = 1
+	potencia = 1
+	enquanto (i <= expoente) faça
+		potencia = potencia * base
+		i = i + 1
+	fim_escolha
+	escreva (potencia)
 fim
 
 ```
