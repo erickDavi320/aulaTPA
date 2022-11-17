@@ -13,17 +13,14 @@ public class Ex003 {
 		
 		for(int check = 2;check <= num; check++) {
 			if(num % check == 0 && num != check){
-				
-			primo = false;
-				
+				primo = false;
 			}
 		}
-		if(primo == true){
-			System.out.println("O número ["+num+"] é primo :D");
-		}else if(primo == false) {
-			System.out.println("O número ["+num+"] NÃO é primo ;-;");
+		if(primo){
+			System.out.println("O nÃºmero ["+num+"] Ã‰ primo :D");
+		}else {
+			System.out.println("O nÃºmero ["+num+"] NÃƒO Ã‰ primo ;-;");
 		}
-		
 		
 		in.close();
 	}
