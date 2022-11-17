@@ -5,29 +5,24 @@ public class Ex002 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        int idade,qUm = 0,qDois=0,qTres=0,qQuatro=0,qCinco=0,a=0, b=0,c=0,d=0,e=0;
+        int idade,qUm = 0,qDois=0,qTres=0,qQuatro=0,qCinco=0;
         double qUP,qDP,qTP,qQP,qCP;
         for (int i = 1; i <=15;i++){
             System.out.print("Informe a idade:");
             idade = in.nextInt();
             if (idade<16){
-                a++;
-                qUm = a;
+                qUm++;
             }else if(idade<31){
-                b++;
-                qDois = b;
+                qDois++;
             }else if(idade<46){
-                c++;
-                qTres = c;
+                qTres++;
             }else if(idade<61){
-                d++;
-                qQuatro = d;
+                qQuatro++;
             }else {
-                e++;
-                qCinco = e;
+                qCinco++;
             }
         }
-        qUP = (qUm / 15.0)*1200;
+        qUP = (qUm / 15.0)*100;
         qDP = (qDois/15.0)*100;
         qTP = (qTres/15.0)*100;
         qQP = (qQuatro/15.0)*100;
