@@ -98,7 +98,7 @@ public class Ex002 {
 ```jsx
 programa FAIXADEIDADE
 var
-	idade, qUm, qDois, qTres, qQuatro, qCinco : inteiro
+	idade, qUm, qDois, qTres, qQuatro, qCinco, i: inteiro
 	qUP, qDP, qTP, qQP, qCP: real
 inicio
 	
@@ -129,10 +129,10 @@ inicio
 		fim_se
 	fim_para
 	qUP = (qUm / 15.0)*100;
-  qDP = (qDois / 15.0)*100;
-  qTP = (qTres / 15.0)*100;
-  qQP = (qQuatro / 15.0)*100;
-  qCP = (qCinco / 15.0)*100;
+  	qDP = (qDois / 15.0)*100;
+  	qTP = (qTres / 15.0)*100;
+  	qQP = (qQuatro / 15.0)*100;
+  	qCP = (qCinco / 15.0)*100;
 	
 	escreva(qUm, qUP)
 	escreva(qDois, qDP)
@@ -162,17 +162,14 @@ public class Ex003 {
 		
 		for(int check = 2;check <= num; check++) {
 			if(num % check == 0 && num != check){
-				
-			primo = false;
-				
+				primo = false;
 			}
 		}
-		if(primo == true){
-			System.out.println("O número ["+num+"] é primo :D");
-		}else if(primo == false) {
-			System.out.println("O número ["+num+"] NÃO é primo ;-;");
+		if(primo){
+			System.out.println("O número ["+num+"] É primo :D");
+		}else {
+			System.out.println("O número ["+num+"] NÃO É primo ;-;");
 		}
-		
 		
 		in.close();
 	}
@@ -186,7 +183,7 @@ public class Ex003 {
 programa PRIMOS
 var
 	num, check: inteiro
-	primo: boleano
+	primo: booleano
 inicio
 	primo = verdadeiro
 	leia (num)	
@@ -197,9 +194,9 @@ inicio
 		fim_se
 	fim_para
 	se(primo) então
-		escreva("Não é primo")
-	senão
 		escreva("É primo")
+	senão
+		escreva("Não é primo")
 	fim_se
 fim
 ```
@@ -243,13 +240,14 @@ public class Ex004 {
 ```jsx
 programa FIBONACCI 
 var
-	n, atual, anterior: inteiro
+	n, atual, i, anterior: inteiro
 inicio
+	atual = 1
+	anterior = 0
 	leia(n)
-	
 	para i = 0 até n passo 1 faça
 		escreva(atual)
-		atual = atual - anterior
+		atual = atual + anterior
 		anterior = atual - anterior
 	fim_para
 fim
@@ -310,6 +308,7 @@ inicio
 		se(age > older) então
 			older = age
 		fim_se
+		average = average + age
 	fim_para
 	escreva("Mais velho: "older)
 	escreva("Mais novo: ", newest)
