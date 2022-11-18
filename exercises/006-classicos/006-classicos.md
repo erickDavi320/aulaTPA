@@ -98,7 +98,7 @@ public class Ex002 {
 ```jsx
 programa FAIXADEIDADE
 var
-	idade, qUm, QDois, qTres, qQuatro, qCinco : inteiro
+	idade, qUm, qDois, qTres, qQuatro, qCinco : inteiro
 	qUP, qDP, qTP, qQP, qCP: real
 inicio
 	
