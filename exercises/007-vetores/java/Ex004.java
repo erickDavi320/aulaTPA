@@ -7,7 +7,7 @@ public class Ex004 {
 		Scanner in = new Scanner (System.in);
 		
 		final int TAM = 10;
-		int i, menor = 1,maior = 0,a[];
+		int i, menor = 999999,maior = 0,a[];
 		
 		a = new int [TAM];
 		
