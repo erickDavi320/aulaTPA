@@ -32,6 +32,9 @@ Here you can find codes of programming exercises.
         |--- python
         |--- lua
         |--- README.md
+    |--- 007-vetores
+        |--- java
+        |--- README.md
 ```
 
 ## 001 Switch Case
@@ -95,3 +98,11 @@ Here you can find codes of programming exercises.
     |--- README.md
 ```
 
+## 007 Vetores
+<a href="https://github.com/erickDavi320/aulaTPA/tree/main/exercises/007-vetores">Go to Page</a>
+
+```
+|--- 007-vetores
+    |--- java
+    |--- README.md
+```
